@@ -2,15 +2,52 @@
 <html>
 <head>
 	<title>secondHTML</title>
+	<style type="text/css">
+		
+		.outline{
+			/*border: 1px solid gray;*/
+			display: block;
+			height: auto;
+			position: relative;
+			width: 300px;
+		}
+		ol{
+			/*border: 1px solid red;*/
+			height: auto;
+			padding: 0px 0px 0px 20px;
+			position: relative;
+			width: 300px;
+		}
+		input{
+			width: 180px;
+		}
+
+		.fl-left{
+			float: left;
+			position: relative;
+		}
+		.fl-right{
+			float: right;
+			position: relative;
+		}
+		.di-bl{
+			display: block;
+		}
+		.bx-si{
+			box-sizing: border-box;
+		}
+	</style>
 </head>
 <body>
-<ol>
-	<li>가나다라</li><button>변경</button><button>완료</button><button>삭제</button>
-	<li>마바사아</li><button>변경</button><button>완료</button><button>삭제</button>
-	<li>자카타파</li><button>변경</button><button>완료</button><button>삭제</button>
-	<li>하자아</li><button>변경</button><button>완료</button><button>삭제</button>
-</ol>
-<input type="text" name=""><button class="add">추가</button>
+<content class="outline bx-si">
+	<ol class="bx-si order">
+		<li class="fl-left">가나다라</li><button class="fl-right">변경</button><button class="fl-right">완료</button><button class="fl-right">삭제</button><br>
+		<li class="fl-left">마바사</li><button class="fl-right">변경</button><button class="fl-right">완료</button><button class="fl-right">삭제</button><br>
+		<li class="fl-left">아자차카</li><button class="fl-right">변경</button><button class="fl-right">완료</button><button class="fl-right">삭제</button><br>
+		<li class="fl-left">타파하</li><button class="fl-right">변경</button><button class="fl-right">완료</button><button class="fl-right">삭제</button><br>
+	</ol>
+	<input type="text" name="" class="fl-left di-bl"><button class="add fl-right di-bl">추가</button>
+</content>
 <script type="text/javascript" src="ToDo.js"></script>
 </body>
 </html>
